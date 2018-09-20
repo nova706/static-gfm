@@ -12,7 +12,7 @@ if (argv.h || argv.help) {
     process.exit();
 }
 
-var source = (argv._.length > 0) ? argv._[0] : argv.src || argv.s || process.cwd();
+var source = (argv._.length > 0) ? argv._[0] : argv.src || argv.s;
 if (source) {
     var dest = argv.dest || argv.d;
     var template = argv.template || argv.t;
